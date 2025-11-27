@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Card Validator | Andrés</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style.css"> 
+</head>
+<body>
+
+    <div class="main-wrapper">
+        
+        <div class="credit-card" id="creditCard">
+            <div class="card-header">
+                <div class="chip"></div>
+                <i class="fas fa-wifi contactless"></i>
+            </div>
+            
+            <div class="card-digits" id="displayNumber">#### #### #### ####</div>
+            
+            <div class="hologram"></div>
+
+            <div class="card-footer">
+                <div class="holder-info">
+                    <label>TITULAR</label>
+                    <div class="holder-name">CLIENTE VIP</div>
+                </div>
+                <div class="card-brand" id="brandLogo">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="input-wrapper">
+                <input type="text" id="inputNumber" class="card-input" placeholder="Número de tarjeta" maxlength="19">
+                <i class="fas fa-lock input-icon"></i>
+            </div>
+
+            <button class="btn-check" id="validateBtn">
+                <span id="btnText">Validar Tarjeta</span>
+                <div class="spinner" id="btnSpinner"></div>
+            </button>
+
+            <div class="status-container" id="statusMsg">
+                </div>
+
+            <div class="security-badge">
+                <i class="fas fa-shield-alt"></i> Procesamiento seguro SSL 256-bit
+            </div>
+        </div>
+
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
